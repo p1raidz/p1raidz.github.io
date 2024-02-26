@@ -6,7 +6,6 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 header {
@@ -35,4 +34,26 @@ footer {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+  
+body {
+    background-image:
+      linear-gradient(45deg, #5fceea 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #5fceea 75%),
+      linear-gradient(45deg, transparent 75%, #5fceea 75%),
+      linear-gradient(45deg, #5fceea 25%, #3085b3 25%);    
+
+    background-size: 200% 200%;       
+    background-position: 0 0, 0 0, -50px -50px, 50px 50px;
+    animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0, 0 0, -50px -50px, 50px 50px;
+    }
+    100% {
+        background-position: 200% 200%, 200% 200%, 150% 150%, 250% 250%;
+    }
+    
 }
