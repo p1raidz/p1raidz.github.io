@@ -33,5 +33,6 @@ footer {
 .gradient-text {
     background: -webkit-linear-gradient(right, rgb(13, 31, 186), rgb(9, 88, 35), rgb(13, 31, 186));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
